@@ -5,7 +5,7 @@ const addBtn = document.querySelector('.add');
 addBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  const task = document.createElement('li');
+  let task = document.createElement('li');
   task.setAttribute('class', 'list-item');
   task.textContent = input.value;
 
