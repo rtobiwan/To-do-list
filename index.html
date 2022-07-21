@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Todo List</title>
+    <title>My Todo List App</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
   </head>
@@ -16,10 +16,14 @@
           <div class="submit-task">
             <label for="task">To do:</label>
             <input type="text" name="task" id="task" value="" />
+            <input type="hidden" id="save-index" />
             <button class="add">Add task</button>
+            <button class="save-edit" style="display: none" id="save-todo-btn">
+              Edit Todo
+            </button>
           </div>
         </form>
-        <div class="todo-list">
+        <div class="todo-list-board">
           <ul class="todo-list"></ul>
         </div>
       </main>

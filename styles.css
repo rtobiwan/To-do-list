@@ -6,6 +6,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 button.delete {
@@ -17,6 +18,7 @@ button.edit {
   background-color: blue;
   color: whitesmoke;
   border-radius: 5px;
+  margin-left: 0.5rem;
 }
 
 ul.todo-list {
@@ -26,7 +28,7 @@ ul.todo-list {
 
 li {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-style: groove;
   border-color: turquoise;
   margin: 1em;
@@ -35,4 +37,9 @@ li {
   background-color: darkmagenta;
   color: white;
   border-radius: 15px;
+}
+
+.btn-container {
+  display: block;
+  align-self: center;
 }
